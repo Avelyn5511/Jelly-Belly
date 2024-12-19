@@ -14,10 +14,10 @@ import Recipes from "./components/pages/RecipesPage/RecipesPage.tsx";
 
 const App: FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Jelly-Belly">
       <Header />
       <Routes>
-        <Route path="/Jelly-Belly" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Jelly-Belly/home" element={<Home />} />
         <Route path="/Jelly-Belly/beans" element={<BeansPage />} />
         <Route path="/Jelly-Belly/bean/:beanId" element={<BeanPage />} />
