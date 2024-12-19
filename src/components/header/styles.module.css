@@ -1,0 +1,45 @@
+.container {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.container img {
+  width: 80px;
+  object-fit: contain;
+}
+
+.container nav {
+  font-size: 18px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Lobster";
+  color: var(--base-red);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navContainer {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navBar a {
+  margin-right: 20px;
+  font-size: 22px;
+  font-family: "Lobster";
+  color: var(--base-red);
+}

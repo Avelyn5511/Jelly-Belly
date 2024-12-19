@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+p {
+  text-align: right;
+}

@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--base-red);
+  border-radius: 10px;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+.imageRecipe {
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.info {
+  height: fit-content;
+  padding: 10px;
+  text-align: left;
+}
+
+.additional_info {
+  position: relative;
+  font-size: 14px;
+  margin: 5px 0;
+  color: #767676;
+  text-align: left;
+}
+
+.description {
+  position: relative;
+  font-size: 14px;
+  text-align: left;
+  margin: 20px 0;
+  color: black;
+}
+
+.title {
+  margin: 5px 0;
+  color: var(--base-red);
+  font-weight: 500;
+  height: 50px;
+}
