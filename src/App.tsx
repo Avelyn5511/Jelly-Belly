@@ -17,7 +17,7 @@ const App: FC = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Jelly-Belly" element={<Home />} />
         <Route path="/Jelly-Belly/home" element={<Home />} />
         <Route path="/Jelly-Belly/beans" element={<BeansPage />} />
         <Route path="/Jelly-Belly/bean/:beanId" element={<BeanPage />} />
