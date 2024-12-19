@@ -1,6 +1,7 @@
 {
-  "name": "beans-home-work",
+  "name": "jelly-belly",
   "private": true,
+  "homepage": "https://edifiels.github.io/Jelly-Belly",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
