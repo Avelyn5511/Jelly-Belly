@@ -14,15 +14,15 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className={styles.navBar}>
-          <Link to="/BeansHomeWork/beans">Beans</Link>
+          <Link to="/Jelly-Belly/beans">Beans</Link>
 
-          <Link to="/BeansHomeWork/facts">Facts</Link>
+          <Link to="/Jelly-Belly/facts">Facts</Link>
 
-          <Link to="/BeansHomeWork/recipes">Recipes</Link>
+          <Link to="/Jelly-Belly/recipes">Recipes</Link>
 
-          <Link to="/BeansHomeWork/combinations">Combinations</Link>
+          <Link to="/Jelly-Belly/combinations">Combinations</Link>
 
-          <Link to="/BeansHomeWork/history">History</Link>
+          <Link to="/Jelly-Belly/history">History</Link>
         </div>
       </nav>
     </header>

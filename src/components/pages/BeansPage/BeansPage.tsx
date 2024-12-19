@@ -49,7 +49,7 @@ const BeansPage: FC = () => {
         {beansData.map((data) => (
           <Link
             key={data.beanId}
-            to={`/BeansHomeWork/bean/${data.beanId}`}
+            to={`/Jelly-Belly/bean/${data.beanId}`}
             className={styles.wrapper}
             style={{
               background: data.backgroundColor,

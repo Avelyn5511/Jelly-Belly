@@ -18,13 +18,13 @@ const App: FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/BeansHomeWork/home" element={<Home />} />
-        <Route path="/BeansHomeWork/beans" element={<BeansPage />} />
-        <Route path="/BeansHomeWork/bean/:beanId" element={<BeanPage />} />
-        <Route path="/BeansHomeWork/facts" element={<Facts />} />
-        <Route path="/BeansHomeWork/recipes" element={<Recipes />} />
-        <Route path="/BeansHomeWork/combinations" element={<Combinations />} />
-        <Route path="/BeansHomeWork/history" element={<History />} />
+        <Route path="/Jelly-Belly/home" element={<Home />} />
+        <Route path="/Jelly-Belly/beans" element={<BeansPage />} />
+        <Route path="/Jelly-Belly/bean/:beanId" element={<BeanPage />} />
+        <Route path="/Jelly-Belly/facts" element={<Facts />} />
+        <Route path="/Jelly-Belly/recipes" element={<Recipes />} />
+        <Route path="/Jelly-Belly/combinations" element={<Combinations />} />
+        <Route path="/Jelly-Belly/history" element={<History />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
