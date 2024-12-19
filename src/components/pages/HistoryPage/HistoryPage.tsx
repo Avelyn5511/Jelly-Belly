@@ -43,7 +43,7 @@ const History: FC = () => {
 
   return (
     <main>
-      <h1>History...</h1>
+      <h1 className={styles.titleBlock}>History...</h1>
       <div className={styles.container}>
         {beansData.map((item) => (
           <div className={styles.item} key={`history_item_${item.mileStoneId}`}>

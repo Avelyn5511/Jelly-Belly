@@ -43,7 +43,7 @@ const Facts: React.FC = () => {
 
   return (
     <main>
-      <h1>Facts...</h1>
+      <h1 className={styles.titleBlock}>Facts...</h1>
       <div className={styles.containerFacts}>
         {beansData.map((item) => (
           <div className={styles.itemFacts}>

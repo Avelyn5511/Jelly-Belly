@@ -44,7 +44,7 @@ const BeansPage: FC = () => {
 
   return (
     <main>
-      <h1>Explore All Beans ...</h1>
+      <h1 className={styles.titleBlock}>Explore All Beans ...</h1>
       <div className={styles.beansContainer}>
         {beansData.map((data) => (
           <Link

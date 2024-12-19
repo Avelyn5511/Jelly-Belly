@@ -6,3 +6,33 @@
 h1 {
   font-size: 64px;
 }
+
+@media screen and (max-width: 1024px) {
+  .not_found_container {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .not_found_container {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .not_found_container {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}

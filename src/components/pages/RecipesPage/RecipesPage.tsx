@@ -43,7 +43,7 @@ const Recipes: React.FC = () => {
 
   return (
     <main>
-      <h1>Recipes...</h1>
+      <h1 className={styles.titleBlock}>Recipes...</h1>
       <div className={styles.container}>
         {beansData.map((item) => (
           <div

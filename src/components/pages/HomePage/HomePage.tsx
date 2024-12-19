@@ -9,7 +9,9 @@ const Home: React.FC = () => {
         <div className={styles.containerGif}>
           <img className={styles.gif} src={homeGif} alt="homeGif" />
           <div className={styles.containerTitle}>
-            <h1>Welcome to the World of Jelly Belly:</h1>
+            <h1 className={styles.title}>
+              Welcome to the World of Jelly Belly:
+            </h1>
             <p>A Rainbow of Flavors Awaits!</p>
           </div>
         </div>

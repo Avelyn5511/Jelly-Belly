@@ -1,7 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
 .gif {
   width: 100%;
   height: 100%;
-  transition: transform 0.5s;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
 }
 
 @keyframes shake {
@@ -23,25 +35,30 @@
 }
 
 .gif:hover {
-  animation: shake 0.5s;
+  animation: shake 0.5s ease-in-out;
 }
 
 .containerGif {
   margin-top: 5%;
   display: grid;
   align-items: center;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .container {
   height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
+.title {
   margin: 50px 0;
   font-size: 48px;
   text-align: center;
-  font-family: Lobster;
+  font-family: "Lobster", sans-serif;
   color: var(--base-red);
 }
 
@@ -52,5 +69,50 @@ p {
   text-align: center;
 }
 
-.containerTitle {
+@media screen and (max-width: 768px) {
+  .containerGif {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .containerGif {
+    margin-top: 2%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containerGif {
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 22px;
+  }
 }

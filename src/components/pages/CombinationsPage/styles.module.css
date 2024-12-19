@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .item {
@@ -14,9 +15,19 @@
   padding: 30px;
   border-radius: 10px;
   height: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-h1 {
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titleBlock {
   margin: 50px 0;
   font-size: 48px;
   text-align: center;
@@ -28,10 +39,80 @@ h1 {
   color: var(--base-red);
   margin-bottom: 24px;
   font-weight: 800;
+  font-size: 24px;
 }
 
 .description {
   color: black;
   font-size: 16px;
   text-align: left;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .titleBlock {
+    margin-top: 20px;
+    font-size: 36px;
+  }
+
+  .item h3 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .item {
+    padding: 20px;
+  }
+
+  .titleBlock1 {
+    margin-top: 50px;
+    font-size: 28px;
+  }
+
+  .item h3 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .item {
+    padding: 25px;
+  }
+
+  .titleBlock1 {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .item h3 {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
 }

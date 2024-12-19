@@ -43,7 +43,7 @@ const Combinations: React.FC = () => {
 
   return (
     <main>
-      <h1>Explore Combinations ...</h1>
+      <h1 className={styles.titleBlock}>Explore Combinations ...</h1>
       <div className={styles.container}>
         {beansData.map((item) => (
           <div
